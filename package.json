@@ -1,0 +1,23 @@
+{
+  "name": "evtsys",
+  "version": "1.0.0",
+  "description": "event system",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mikou/evtsys.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mikou/evtsys/issues"
+  },
+  "homepage": "https://github.com/Mikou/evtsys#readme",
+  "devDependencies": {
+    "jest": "^23.6.0",
+    "jest-cli": "^23.6.0"
+  }
+}
