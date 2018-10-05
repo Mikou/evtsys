@@ -3,7 +3,7 @@ node_js:
   - v8
   - v7
 script:
-  - npm test
+  - knex migrate:latest --env test && npm test
 services:
   - postgresql
 before_script:
