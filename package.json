@@ -6,6 +6,10 @@
   "scripts": {
     "test": "jest"
   },
+  "jest": {
+    "testEnvironment": "node",
+    "setupTestFrameworkScriptFile": "<rootDir>/test/setup.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Mikou/evtsys.git"
@@ -19,5 +23,10 @@
   "devDependencies": {
     "jest": "^23.6.0",
     "jest-cli": "^23.6.0"
+  },
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "knex": "^0.15.2",
+    "pg": "^7.5.0"
   }
 }
