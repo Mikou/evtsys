@@ -2,9 +2,13 @@
   "name": "evtsys",
   "version": "1.0.0",
   "description": "event system",
-  "main": "index.js",
+  "main": "src",
   "scripts": {
-    "test": "jest"
+    "start": "node .",
+    "test": "jest",
+    "coverage": "npm test -- --coverage",
+    "postcoverage": "opn coverage/lcov-report/index.html",
+    "dev": "nodemon -i \"*.test.js\" ."
   },
   "jest": {
     "testEnvironment": "node",
@@ -22,7 +26,9 @@
   "homepage": "https://github.com/Mikou/evtsys#readme",
   "devDependencies": {
     "jest": "^23.6.0",
-    "jest-cli": "^23.6.0"
+    "jest-cli": "^23.6.0",
+    "nodemon": "^1.18.4",
+    "opn-cli": "^3.1.0"
   },
   "dependencies": {
     "dotenv": "^6.0.0",
